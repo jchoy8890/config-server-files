@@ -1,5 +1,5 @@
 info:
-  foo: bar
+  foo: "bar"
 
 
 server:
