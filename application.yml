@@ -1,0 +1,47 @@
+info:
+  foo: bar
+
+
+server:
+  port: 8088
+
+
+#---
+#spring:
+#  application:
+#    name: api
+#  cloud:
+#    config:
+#      profile: dev
+#      server:
+#        bootstrap: true
+#        git:
+#          uri: https://github.com/jchoy8890/config-server-files
+#          skipSslValidation: true
+#          refresh-rate: 5
+#  profiles:
+#    active: cert
+#
+#---
+#spring:
+#  application:
+#    name: cert
+#  cloud:
+#    config:
+#      profile: cert
+#      server:
+#        bootstrap: true
+#        git:
+#          uri: https://github.com/jchoy8890/config-server-files
+
+---
+spring:
+  application:
+    name: local
+  cloud:
+    config:
+      profile: local
+      server:
+        bootstrap: true
+        git:
+          uri: file://${user.home}/developer/projects/backend/git-local
